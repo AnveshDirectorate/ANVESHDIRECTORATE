@@ -1,0 +1,3 @@
+# Netlify Redirects & Serverless API Route
+/api/validate-code  /.netlify/functions/validate-code  200
+/*                  /404.html                          404

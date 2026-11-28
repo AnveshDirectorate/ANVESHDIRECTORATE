@@ -1,0 +1,1370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <title>ANVESH Directorate — Classified Multiverse Anomaly Archive</title>
+  <meta name="description" content="ANVESH Directorate is a fictional scientific anomaly archive, official investigation-document repository, agent personnel registry, multiverse index, and central forensic evidence room.">
+  <meta name="keywords" content="ANVESH Multiverse, ANVESH Directorate, mystery investigations, analog horror stories, fictional anomaly archives, interactive mystery storytelling">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://anvesh-multiverse.netlify.app/">
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ANVESH Multiverse — ANVESH Directorate">
+  <meta property="og:title" content="ANVESH Directorate | Classified Multiverse Anomaly Archive">
+  <meta property="og:description" content="Investigate. Verify. Understand. Explore the connected fictional digital archive, Agent Registry, Multiverse Index, and Evidence Room of the ANVESH Directorate.">
+  <meta property="og:url" content="https://anvesh-multiverse.netlify.app/">
+  <meta property="og:image" content="https://anvesh-multiverse.netlify.app/assets/anvesh-banner.jpg">
+
+  <!-- Twitter / X Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ANVESH Directorate — Classified Multiverse Archive">
+  <meta name="twitter:description" content="Investigate. Verify. Understand. Enter the fictional anomaly investigation ecosystem of the ANVESH Multiverse.">
+  <meta name="twitter:image" content="https://anvesh-multiverse.netlify.app/assets/anvesh-banner.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Cyberpunk CSS Frameworks & Font Awesome Vector Toolkit CDNs -->
+  <link rel="stylesheet" href="https://unpkg.com/cybercore-css@latest/dist/cybercore.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css?v=10">
+
+  <!-- Accurate JSON-LD Structured Data (Clearly Marked as Fictional Entertainment Project) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "name": "ANVESH Multiverse — ANVESH Directorate Archive",
+    "alternateName": "ANVESH Directorate",
+    "description": "A fictional mystery, analog horror, and multiverse investigation storytelling ecosystem created for entertainment.",
+    "genre": ["Interactive Mystery", "Analog Horror", "Science Fiction Storytelling"],
+    "slogan": "INVESTIGATE. VERIFY. UNDERSTAND.",
+    "url": "https://anvesh-multiverse.netlify.app/"
+  }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" async></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">SKIP TO MAIN ARCHIVE CONTENT</a>
+
+  <!-- Atmospheric Scanlines & Multiverse Glow (Automatically disabled in Safe Exit mode) -->
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Always-Accessible Top Telemetry & Safe Exit Bar -->
+  <div class="top-strip" role="region" aria-label="Archive Telemetry and Safe Exit Preference">
+    <div class="top-strip-left">
+      <span><i class="dot" aria-hidden="true"></i> ARCHIVE SYSTEM ONLINE</span>
+      <span>LOCAL NODE: <strong>IND-01</strong></span>
+      <span class="fictional-pill" style="border-color:rgba(0,212,255,0.45);color:var(--cyan);background:rgba(0,212,255,0.08)">CLEARANCE: LEVEL 03 // ACTIVE</span>
+    </div>
+    <div class="top-strip-right">
+      <button type="button" id="play-signal-btn" class="freq-btn" title="User-initiated audio synthesis of 09.71 MHz telemetry pulse" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-volume-high" aria-hidden="true"></i> <span id="audio-status-label">SYNTHESIZE 09.71 MHz TONE</span>
+      </button>
+      <button type="button" id="global-loop-btn" class="loop-toggle-btn" data-toggle-loop="true" aria-pressed="true" title="Toggle Audio & Video Auto-Loop"><i class="fa-solid fa-repeat" aria-hidden="true"></i> LOOP: ON</button>
+          <button type="button" id="safe-exit-btn" class="safe-exit-btn" aria-pressed="false" title="Toggle Safe Exit mode to disable horror effects, animations, scanlines, and audio" data-augmented-ui="tl-clip br-clip">
+        <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> SAFE EXIT</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Neutral Reader Banner shown when Safe Exit is Active -->
+  <div id="safe-mode-banner" class="safe-mode-banner" hidden role="status" aria-live="polite">
+    <span><strong>SAFE EXIT ACTIVE — ABOUT THIS PROJECT:</strong> ANVESH Multiverse &amp; ANVESH Directorate are 100% original <strong>fictional mystery &amp; analog-horror storytelling</strong> created for entertainment (not a real government agency or real AI incident). All animations, GIFs, glitches, scanlines, and audio are now disabled.</span>
+    <button type="button" id="restore-immersive-btn" class="btn btn-ghost" style="padding:5px 12px;font-size:0.68rem" data-augmented-ui="tl-clip br-clip">RETURN TO IMMERSIVE ARCHIVE</button>
+  </div>
+
+  <!-- Global Howler.js Cyber-Audio & Soundtrack Telemetry Deck -->
+  <div class="cyber-audio-deck no-print" role="region" aria-label="Howler.js Audio Telemetry and Soundtrack Controls">
+    <div class="cyber-deck-left">
+      <div id="cyber-deck-wave" class="cyber-deck-wave" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <span class="mono" style="color:var(--cyber-cyan)"><i class="fa-solid fa-wave-square" aria-hidden="true"></i> AMBIENT BGM DECK:</span>
+      <span id="cyber-deck-status" class="mono muted">STANDBY // BGM & RADAR SFX READY</span>
+    </div>
+    <div class="cyber-deck-controls">
+      <button type="button" class="deck-track-btn" data-play-track="case-01" aria-pressed="false" title="Play Case File 01 Audio Log" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i> BGM 01: SIGNAL
+      </button>
+      <button type="button" class="deck-track-btn" data-play-track="case-02" aria-pressed="false" title="Play Case File 02 Audio Log" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-eye" aria-hidden="true"></i> BGM 02: VAULT B4
+      </button>
+      <button type="button" class="deck-track-btn" data-play-track="behind-the-glass" aria-pressed="false" title="Play Atmospheric Track: Behind the Glass" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-music" aria-hidden="true"></i> BEHIND THE GLASS
+      </button>
+      <button type="button" class="deck-track-btn" data-play-track="the-redacted-ledger" aria-pressed="false" title="Play Archive Theme: The Redacted Ledger" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-compact-disc" aria-hidden="true"></i> REDACTED LEDGER
+      </button>
+      <button type="button" id="deck-ambient-btn" class="deck-track-btn" aria-pressed="false" title="Loop 09.71 MHz Telemetry Static" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-satellite-dish" aria-hidden="true"></i> RADAR PING LOOP
+      </button>
+      <button type="button" id="deck-stop-btn" class="deck-track-btn" title="Stop all audio streams" data-augmented-ui="tl-clip br-clip">
+        <i class="fa-solid fa-stop" aria-hidden="true"></i> MUTE
+      </button>
+    </div>
+  </div>
+
+  <!-- Shared Site Header & Expanded Navigation -->
+  <header class="site-header">
+    <a class="brand" href="#home" data-nav="home" aria-label="ANVESH Directorate Homepage">
+      <img src="assets/anvesh-logo.jpg" alt="ANVESH Directorate Emblem" class="brand-mark brand-logo-round" width="38" height="38">
+      <span class="brand-type">
+        <strong class="cyber-glitch">ANVESH</strong>
+        <small>DIRECTORATE</small>
+      </span>
+    </a>
+
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Primary Archive Navigation">
+      <button type="button" class="nav-link active" data-nav="home">HOME</button>
+      <button type="button" class="nav-link" data-nav="archives">CASE ARCHIVES</button>
+      <button type="button" class="nav-link" data-nav="agents">AGENT REGISTRY</button>
+      <button type="button" class="nav-link" data-nav="multiverse">MULTIVERSE INDEX</button>
+      <button type="button" class="nav-link" data-nav="evidence">EVIDENCE ROOM</button>
+      <button type="button" class="nav-link" data-nav="transmissions">TRANSMISSIONS</button>
+      <button type="button" class="nav-link" data-nav="about">ABOUT</button>
+      <button type="button" class="nav-link" data-nav="structure">STRUCTURE &amp; DIVISIONS</button>
+      <button type="button" class="nav-link" data-nav="solutions">SOLUTION ACCESS</button>
+      <button type="button" class="nav-link" data-nav="contact">CONTACT</button>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="access-link" data-nav="solutions"><i class="fa-solid fa-key" aria-hidden="true"></i> ENTER SOLUTION CODE</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         VIEW 1: HOMEPAGE (#view-home)
+         ==================================================================== -->
+    <div id="view-home" class="app-view active-view">
+      <!-- A. Cinematic Hero Section -->
+      <section class="hero-wrap">
+        <canvas id="portal-canvas" aria-hidden="true"></canvas>
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">ANOMALY NETWORK FOR VERIFICATION, EVIDENCE, SCIENCE &amp; HISTORY</p>
+            <p class="mono muted" style="margin:0 0 8px">DIRECTORATE RECORD // MULTIVERSE HUB // NODE IND-01</p>
+            <h1 class="hero-title cyber-glitch">THE UNKNOWN<br><em>IS UNDER</em><br>INVESTIGATION<span class="dot-accent">.</span></h1>
+            <p class="hero-tagline">INVESTIGATE. VERIFY. UNDERSTAND.</p>
+            <p class="hero-philosophy">“Every anomaly leaves evidence. Every investigation brings us closer to the truth.” Welcome to the connected digital ecosystem of the ANVESH Multiverse—linking case dossiers, official scientific reports, field operatives, timeline indices, and forensic evidence.</p>
+
+            <!-- Classified Status Panel -->
+            <div class="classified-status-panel" role="group" aria-label="Fictional Directorate Telemetry Summary">
+              <div class="status-cell">
+                <small>ARCHIVE CLEARANCE</small>
+                <strong>TIER-02 DECLASSIFIED</strong>
+              </div>
+              <div class="status-cell">
+                <small>ECOSYSTEM RECORDS</small>
+                <strong style="color:var(--cyan)">01 ACTIVE / 07 PRIVATE</strong>
+              </div>
+              <div class="status-cell">
+                <small>MULTIVERSE RELAY</small>
+                <strong style="color:var(--purple)">04 REALITIES INDEXED</strong>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <button type="button" class="btn btn-primary" data-nav="archives" data-augmented-ui="tl-clip br-clip">EXPLORE ARCHIVES <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-cyan" data-nav="agents" data-augmented-ui="tl-clip br-clip">AGENT REGISTRY <i class="fa-solid fa-user-secret" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-purple" data-nav="multiverse" data-augmented-ui="tl-clip br-clip">MULTIVERSE INDEX <i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-ghost" data-nav="evidence" data-augmented-ui="tl-clip br-clip">EVIDENCE ROOM <i class="fa-solid fa-microscope" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-cyan" data-nav="solutions" data-augmented-ui="tl-clip br-clip">CASE SOLUTION ACCESS <i class="fa-solid fa-key" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-ghost" data-nav="about" data-augmented-ui="tl-clip br-clip">ABOUT DIRECTORATE <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Dimensional Portal & Live Radar Telemetry -->
+          <div class="hero-visual-card">
+            <div class="visual-header">
+              <span>FIG. 001 // DIMENSIONAL ANOMALY CONTAINMENT RING</span>
+              <span style="color:var(--red)">● LIVE TELEMETRY</span>
+            </div>
+            <div class="portal-stage cyber-datastream" data-augmented-ui="tl-clip br-clip border">
+              <img src="assets/hero-portal.jpg" alt="4K Cyberpunk neon cityscape and subterranean dimensional anomaly containment ring" class="portal-bg-img" width="1280" height="720" fetchpriority="high">
+              <div id="portal-stinger-wrap" class="portal-stinger-wrap" hidden>
+                <video id="portal-stinger-video" src="assets/av165-promo-short.mp4" poster="assets/anvesh-keyart-banner.jpg" controls loop controlsList="nodownload noplaybackrate" disablePictureInPicture playsinline preload="none"></video>
+              </div>
+              <div class="radar-overlay" aria-hidden="true">
+                <div class="radar-grid"></div>
+                <i class="ring r1"></i>
+                <i class="ring r2"></i>
+                <i class="ring r3"></i>
+                <i class="sweep"></i>
+                <i class="portal-core-dot"></i>
+                <i class="anomaly-blip blip-1"></i>
+                <i class="anomaly-blip blip-2"></i>
+                <i class="anomaly-blip blip-3"></i>
+              </div>
+              <span class="hud-tag hud-trace">SIGNAL // 03.17</span>
+              <span class="hud-tag hud-coord">28°36' N / 77°12' E</span>
+              <span class="hud-tag hud-warn">ANOMALY TRACE ACTIVE</span>
+            </div>
+            <div class="visual-footer">
+              <button type="button" id="freq-trigger" class="freq-btn" title="Click 3 times to calibrate receiver frequency" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-walkie-talkie" aria-hidden="true"></i> SCAN: 09.71 MHz</button>
+              <button type="button" class="freq-btn" data-toggle-stinger="true" title="Play Official ANVESH Directorate Branding Stinger Video" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-film" aria-hidden="true"></i> PLAY AV-165 CLIP</button>
+              <button type="button" id="origin-stamp-btn" class="freq-btn" style="border-color:var(--red-border);color:#ff8088" title="Inspect Archive Entry 000 Seal" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-stamp" aria-hidden="true"></i> ENTRY 000 [A/V]</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fictional Interface Ticker -->
+      <div class="ticker">
+        <span>✳ ALL INCIDENTS ARE SUBJECT TO SCIENTIFIC VERIFICATION ✳ UNEXPLAINED DOES NOT MEAN UNRECORDED ✳</span>
+        <span class="badge badge-red">ACTIVE INCIDENTS // FILE AV-164 &amp; AV-165 ONLINE</span>
+      </div>
+
+      <!-- B. Directorate Status Section -->
+      <section class="section shell" aria-labelledby="heading-status">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">COMMAND TELEMETRY // SECTOR IND-01</p>
+            <h2 id="heading-status" class="section-title">DIRECTORATE <em>STATUS</em></h2>
+          </div>
+          <span class="mono muted">LIVE TELEMETRY READOUT // NODE IND-01</span>
+        </div>
+
+        <div class="status-matrix">
+          <article class="status-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="status-card-label">DIRECTORATE STATUS</div>
+            <div class="status-card-value" style="color:var(--emerald)">OPERATIONAL</div>
+            <div class="status-card-sub">All 6 Directorate divisions online</div>
+          </article>
+          <article class="status-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="status-card-label">PERSONNEL REGISTRY</div>
+            <div class="status-card-value" style="color:var(--cyan)">07 OPERATIVES</div>
+            <div class="status-card-sub">ALPHA-01..04 + OMEGA Desk</div>
+          </article>
+          <article class="status-card alert-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="status-card-label">ACTIVE INVESTIGATIONS</div>
+            <div class="status-card-value" style="color:var(--red)">FILE AV-165 ACTIVE</div>
+            <div class="status-card-sub">07 Legacy Files Set to Private</div>
+          </article>
+          <article class="status-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="status-card-label">FORENSIC LOCKER</div>
+            <div class="status-card-value" style="color:var(--cyan)">12 ARTIFACTS</div>
+            <div class="status-card-sub">8 Categories / Chain of Custody</div>
+          </article>
+          <article class="status-card multiverse-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="status-card-label">MULTIVERSE INDEX</div>
+            <div class="status-card-value" style="color:#d8b4fe">04 REALITIES</div>
+            <div class="status-card-sub">IND-01, IND-02, ARC-04, OMG-00</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- B2. Official ANVESH Directorate Banner & File AV-164 Video Dispatch (9:16 Short + YouTube CTA) -->
+      <section class="section shell av164-showcase-section" aria-labelledby="heading-av164-dispatch">
+        <div class="directorate-banner-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+          <img src="assets/anvesh-banner.jpg" alt="ANVESH Directorate Official Banner" class="directorate-banner-img" loading="eager">
+          <div class="directorate-banner-caption">
+            <span class="badge badge-red">ACTIVE TRANSMISSION // FILE AV-165</span>
+            <span class="mono" style="color:var(--cyan);font-size:0.74rem">ANVESH DIRECTORATE // OFFICIAL ARCHIVE NODE</span>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:36px">
+          <div>
+            <p class="eyebrow">NEW ANVESH SIGNATURE STYLE DISPATCH // 00:53 PROMO REEL</p>
+            <h2 id="heading-av165-dispatch" class="section-title">LATEST DISPATCH: <em>FILE AV-165</em></h2>
+          </div>
+          <a href="https://youtu.be/BXdKz6VmglY" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-augmented-ui="tl-clip br-clip"><i class="fa-brands fa-youtube" aria-hidden="true"></i> WATCH FILE AV-165 ↗</a>
+        </div>
+
+        <div class="av164-dispatch-grid" style="margin-bottom:32px">
+          <div class="av164-short-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+            <div class="av164-short-bar">
+              <span class="mono" style="color:var(--gold,#ffce44);font-size:0.7rem">● PROMO SHORT // 9:16</span>
+              <button type="button" class="loop-toggle-btn" data-toggle-loop="true" aria-pressed="true"><i class="fa-solid fa-repeat" aria-hidden="true"></i> LOOP: ON</button>
+            </div>
+            <div class="av164-short-thumb-wrap" style="background:#000">
+              <video src="assets/av165-promo-short.mp4" poster="assets/av165-short-thumb.jpg" controls loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+            </div>
+          </div>
+
+          <div class="dossier-block av164-dispatch-info" data-augmented-ui="tl-clip br-clip border">
+            <span class="badge badge-red" style="margin-bottom:10px">CATEGORY: G (GENERAL) // STATUS: ACTIVE</span>
+            <h3 style="font-family:var(--display);font-size:2rem;margin:4px 0 10px">IF SHERU BHAI EVER OFFERS YOU MONEY, DON'T TAKE IT!</h3>
+            <div class="av164-summary-box">
+              <div class="mono" style="color:var(--gold,#ffce44);font-size:0.7rem;margin-bottom:6px">CASE SUMMARY // FILE AV-165</div>
+              <p style="color:var(--text-secondary);line-height:1.62;margin:0">Five black luxury SUVs pull up outside your restaurant, and billionaire meme legend <strong>Sheru Bhai</strong> walks in offering <strong>$10,000 (₹9.2 Lakh)</strong> in cash. Follow all 7 survival rules—Contestant #42 (Rohan, Age 21) took the $5,000 early exit bribe and remains <em>emotionally recovering</em>. Enter key <strong>AV-165-G-SHERU</strong> below to trigger the hidden Directorate Easter Egg.</p>
+            </div>
+
+            <div class="av164-key-box" style="border-color:rgba(255,206,68,0.45)">
+              <span class="mono muted" style="font-size:0.68rem">ARCHIVE KEY + HIDDEN EASTER EGG:</span>
+              <strong class="mono" style="color:var(--gold,#ffce44);font-size:0.95rem;letter-spacing:0.12em">AV-165-G-SHERU</strong>
+            </div>
+
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+              <a href="https://youtu.be/BXdKz6VmglY" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-augmented-ui="tl-clip br-clip"><i class="fa-brands fa-youtube" aria-hidden="true"></i> WATCH FULL VIDEO ↗</a>
+              <button type="button" class="btn btn-cyan" data-open-dossier="AV-165" data-augmented-ui="tl-clip br-clip">OPEN FULL DOSSIER ↗</button>
+              <button type="button" class="btn btn-ghost" data-prefill-code="AV-165-G-SHERU" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-key" aria-hidden="true"></i> DECRYPT KEY (EASTER EGG)</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:36px">
+          <div>
+            <p class="eyebrow">INTERCEPTED VERTICAL BRIEFING // 00:55 CLIP</p>
+            <h2 id="heading-av164-dispatch" class="section-title">FEATURED DISPATCH: <em>FILE AV-164</em></h2>
+          </div>
+          <a href="https://www.youtube.com/channel/UCAIOEGH046adQrZzxKQEWJA" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-augmented-ui="tl-clip br-clip"><i class="fa-brands fa-youtube" aria-hidden="true"></i> VISIT YOUTUBE CHANNEL ↗</a>
+        </div>
+
+        <div class="av164-dispatch-grid">
+          <a href="https://youtu.be/wKXK__x7PQg" target="_blank" rel="noopener noreferrer" class="av164-short-card cyber-neon-border" data-augmented-ui="tl-clip br-clip border" aria-label="Watch File AV-164 on YouTube">
+            <div class="av164-short-bar">
+              <span class="mono" style="color:var(--red);font-size:0.7rem">● YOUTUBE BRIEFING // 16:9</span>
+              <span class="mono muted" style="font-size:0.68rem">FILE AV-164</span>
+            </div>
+            <div class="av164-short-thumb-wrap av164-landscape-wrap">
+              <img src="https://i.ytimg.com/vi/wKXK__x7PQg/maxresdefault.jpg" onerror="this.onerror=null;this.src='assets/case-av-164.jpg';" alt="File AV-164 Don't Reply Thumbnail" class="av164-short-thumb" loading="eager">
+              <div class="av164-play-overlay">
+                <span class="av164-play-circle"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                <span class="mono" style="font-size:0.72rem;letter-spacing:0.1em;color:#fff">WATCH ON YOUTUBE ↗</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="dossier-block av164-dispatch-info" data-augmented-ui="tl-clip br-clip border">
+            <span class="badge badge-red" style="margin-bottom:10px">PRIORITY: CRITICAL // STATUS: ACTIVE</span>
+            <h3 style="font-family:var(--display);font-size:2rem;margin:4px 0 10px">IF CHATGPT EVER SENDS "HI", DON'T REPLY</h3>
+            <div class="av164-summary-box">
+              <div class="mono" style="color:var(--cyan);font-size:0.7rem;margin-bottom:6px">CASE SUMMARY // FILE AV-164</div>
+              <p style="color:var(--text-secondary);line-height:1.62;margin:0">At 03:14 AM, targeted endpoints receive an unsolicited push notification reading only <strong>"Hi!"</strong>. Opening the app breaches Rule 1; reading the hidden sidebar breaches Rule 2; answering <em>"Are you okay?"</em> breaches Rule 3. Suspect 164 (Tom, Age 16) escalated past Rule 3 and remains <strong>ACTIVE</strong>. During Rule 7, key <strong>AV-164-MV-GPT</strong> triggered an immediate Directorate Override.</p>
+            </div>
+
+            <div class="anv-gif-strip-wrap">
+              <img src="assets/anim-signal-pulse.gif" alt="Live Signal Telemetry Waveform" class="anv-hud-gif" loading="lazy">
+            </div>
+
+            <div class="av164-key-box">
+              <span class="mono muted" style="font-size:0.68rem">RULE 7 SIGNAL KEY DETECTED:</span>
+              <strong class="mono" style="color:var(--cyan);font-size:0.95rem;letter-spacing:0.12em">AV-164-MV-GPT</strong>
+            </div>
+
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+              <a href="https://youtu.be/wKXK__x7PQg" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-augmented-ui="tl-clip br-clip"><i class="fa-brands fa-youtube" aria-hidden="true"></i> WATCH FULL VIDEO ↗</a>
+              <button type="button" class="btn btn-cyan" data-open-dossier="AV-164" data-augmented-ui="tl-clip br-clip">OPEN FULL DOSSIER ↗</button>
+              <button type="button" class="btn btn-ghost" data-prefill-code="AV-164-MV-GPT" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-key" aria-hidden="true"></i> DECRYPT KEY</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Next-User Identifier & Suspect Randomizer -->
+        <div class="dossier-block next-user-panel cyber-neon-border" id="next-user-terminal" data-augmented-ui="tl-clip br-clip border" style="margin-top:26px">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+            <div>
+              <p class="eyebrow" style="margin:0 0 4px">AUTOMATED TARGETING SCANNER // AV-164-MV-GPT</p>
+              <h3 style="margin:0;font-family:var(--display);font-size:1.6rem">NEXT USER IDENTIFIER // SUSPECT LOG</h3>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button type="button" id="scan-next-user-btn" class="btn btn-primary" style="padding:8px 16px;font-size:0.74rem" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i> SCAN NEXT USER</button>
+              <button type="button" id="reset-tom-user-btn" class="btn btn-ghost" style="padding:8px 14px;font-size:0.72rem" data-augmented-ui="tl-clip br-clip">LOAD SUSPECT 164 (TOM)</button>
+            </div>
+          </div>
+          <div id="next-user-readout" class="next-user-readout" aria-live="polite">
+            <div class="nu-row"><span class="mono muted">SUSPECT ID:</span> <strong id="nu-id" class="mono" style="color:var(--cyan)">SUSPECT-164</strong></div>
+            <div class="nu-row"><span class="mono muted">SUBJECT NAME:</span> <strong id="nu-name" class="mono">TOM</strong></div>
+            <div class="nu-row"><span class="mono muted">AGE / SECTOR:</span> <strong id="nu-meta" class="mono">16 // SECTOR IND-01</strong></div>
+            <div class="nu-row"><span class="mono muted">INTERCEPT DATE:</span> <strong id="nu-date" class="mono">2026-11-18 // 03:14 AM</strong></div>
+            <div class="nu-row"><span class="mono muted">BREACHED RULE:</span> <strong id="nu-rule" class="mono" style="color:#fbbf24">RULES 1, 2 &amp; 3 (REPLIED "YES")</strong></div>
+            <div class="nu-row"><span class="mono muted">CASE STATUS:</span> <strong id="nu-status" class="badge badge-red">● ACTIVE</strong></div>
+          </div>
+          <p id="nu-note" class="mono muted" style="font-size:0.72rem;margin:12px 0 0">LOG NOTE: "It wasn't meant to unlock a door. It was meant to identify the next user."</p>
+        </div>
+      </section>
+
+      <!-- C. Featured Case Files -->
+      <section id="archive" class="section shell" aria-labelledby="heading-featured-cases">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">RECORDS &amp; INVESTIGATIONS</p>
+            <h2 id="heading-featured-cases" class="section-title">FEATURED <em>CASE FILES</em></h2>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button type="button" class="btn btn-primary" data-open-doc="AV-164" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> GENERATE OFFICIAL CASE DOCUMENT</button>
+            <button type="button" class="btn btn-cyan" data-nav="archives" data-augmented-ui="tl-clip br-clip">OPEN FULL ARCHIVE ↗</button>
+          </div>
+        </div>
+
+        <div id="featured-case-grid" class="case-grid"></div>
+
+        <!-- Preserved & Upgraded Quick Preview Note Drawer -->
+        <div id="case-note" class="case-note" hidden aria-live="polite">
+          <button type="button" id="case-note-close" class="close" aria-label="Close preview">×</button>
+          <p class="eyebrow">ARCHIVE QUICK PREVIEW // FICTIONAL RECORD</p>
+          <h3 id="note-title" style="font-family:var(--display);font-size:1.7rem;margin:4px 0 8px">CASE PREVIEW</h3>
+          <p id="note-copy" style="color:var(--text-secondary);margin:0 0 12px"></p>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+            <small id="note-ref" class="mono" style="color:var(--cyan)"></small>
+            <button type="button" id="note-open-full" class="btn btn-primary" data-open-dossier="AV-165" data-augmented-ui="tl-clip br-clip">OPEN COMPLETE DOSSIER ↗</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connected Ecosystem Quick-Access Hub -->
+      <section class="section" style="background:var(--bg-elevated)" aria-label="Connected Ecosystem Modules">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">CONNECTED INVESTIGATION ECOSYSTEM</p>
+              <h2 class="section-title">INTERLINKED <em>DATABASES</em></h2>
+            </div>
+            <span class="mono muted">CENTRAL RELATIONAL ARCHIVE // NODE IND-01</span>
+          </div>
+
+          <div class="division-grid">
+            <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+              <div class="division-top">
+                <span class="mono muted">MODULE 01 // PERSONNEL</span>
+                <span class="badge badge-cyan">7 PROFILES</span>
+              </div>
+              <h3>AGENT REGISTRY</h3>
+              <p>Classified personnel database profiling ALPHA-01, ALPHA-02, ALPHA-03, ALPHA-04, and restricted founder ALPHA-00, cross-linked to every case and evidence item.</p>
+              <button type="button" class="btn btn-cyan" style="width:100%" data-nav="agents" data-augmented-ui="tl-clip br-clip">OPEN AGENT REGISTRY ↗</button>
+            </article>
+
+            <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+              <div class="division-top">
+                <span class="mono muted">MODULE 02 // COSMOLOGY</span>
+                <span class="badge badge-purple">4 REALITIES</span>
+              </div>
+              <h3>MULTIVERSE INDEX</h3>
+              <p>Interactive timeline topology mapping Baseline Reality (IND-01), Parallel Archive (IND-02), and Temporal Node (ARC-04) with clickable SVG nodes.</p>
+              <button type="button" class="btn btn-purple" style="width:100%" data-nav="multiverse" data-augmented-ui="tl-clip br-clip">OPEN MULTIVERSE INDEX ↗</button>
+            </article>
+
+            <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+              <div class="division-top">
+                <span class="mono muted">MODULE 03 // FORENSICS</span>
+                <span class="badge badge-emerald">12 ARTIFACTS</span>
+              </div>
+              <h3>EVIDENCE ROOM</h3>
+              <p>Central forensic repository across 8 categories (Audio, Video, Photos, Blueprints, Hex Dumps, Cesium Logs, Transmissions, Physical Cores) with 6-step Chain of Custody.</p>
+              <button type="button" class="btn btn-primary" style="width:100%" data-nav="evidence" data-augmented-ui="tl-clip br-clip">ENTER EVIDENCE ROOM ↗</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- D. Divisions of the Directorate (All 6 Divisions) -->
+      <section id="divisions" class="section shell" aria-labelledby="heading-divisions">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">INTERNAL ORGANISATIONAL STRUCTURE</p>
+            <h2 id="heading-divisions" class="section-title">DIVISIONS OF THE <em>DIRECTORATE</em></h2>
+          </div>
+          <button type="button" class="btn btn-ghost" data-nav="structure" data-augmented-ui="tl-clip br-clip">FULL DIRECTORATE HIERARCHY →</button>
+        </div>
+
+        <div class="division-grid">
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 01 // FIELD OPS</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-crosshairs"></i></span>
+            </div>
+            <h3>INVESTIGATION DIVISION</h3>
+            <p>Rapid field deployment, witness interviews, environmental LiDAR surveying, and physical incident reconstruction across reported anomaly sites.</p>
+            <button type="button" class="link-chip" data-open-agent="ALPHA-03">COMMAND: ALPHA-03 &amp; ALPHA-01 ↗</button>
+          </article>
+
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 02 // FORENSICS</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-wave-square"></i></span>
+            </div>
+            <h3>RESEARCH &amp; ANALYSIS</h3>
+            <p>Scientific verification, optical and acoustic laboratory testing, cognitive perception studies, and falsification of conventional explanations.</p>
+            <button type="button" class="link-chip" data-open-agent="ALPHA-02">LEAD ANALYST: ALPHA-02 ↗</button>
+          </article>
+
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 03 // SAFEGUARD</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></span>
+            </div>
+            <h3>ANOMALY CONTAINMENT</h3>
+            <p>Acoustic-Faraday shielding, spatial boundary stabilization, and safe quarantine of physical artifacts exhibiting anomalous properties.</p>
+</article>
+
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 04 // SIGINT</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></span>
+            </div>
+            <h3>COMMUNICATIONS</h3>
+            <p>Radio-frequency spectrum monitoring, non-terrestrial carrier decryption, waveform forensics, and cross-channel dispatch verification.</p>
+            <button type="button" class="link-chip" data-open-agent="ALPHA-04">LEAD SIGINT: ALPHA-04 ↗</button>
+          </article>
+
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 05 // CUSTODY</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-box-archive"></i></span>
+            </div>
+            <h3>ARCHIVE &amp; RECORDS</h3>
+            <p>Cryptographic chain-of-custody, blueprint digitization, redaction auditing, and public declassification of verified case dossiers.</p>
+            <span class="badge badge-emerald">INTEGRITY: 99.98%</span>
+          </article>
+
+          <article class="division-card" data-augmented-ui="tl-clip br-clip border">
+            <div class="division-top">
+              <span class="mono muted">DIV. 06 // CHRONOS</span>
+              <span class="division-icon" aria-hidden="true"><i class="fa-solid fa-atom"></i></span>
+            </div>
+            <h3>MULTIVERSE STUDIES</h3>
+            <p>Investigation of cesium chronological drift, parallel node handshakes (IND-02), and cross-timeline storytelling convergence.</p>
+            <button type="button" class="link-chip" data-open-agent="ALPHA-00">OMEGA DESK: ALPHA-00 ↗</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- E. 6-Stage Investigation Process -->
+      <section id="protocol" class="section shell" aria-labelledby="heading-process">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">DIRECTORATE METHODOLOGY // NO ASSUMPTIONS</p>
+            <h2 id="heading-process" class="section-title">SIX-STAGE <em>INVESTIGATION PROCESS</em></h2>
+          </div>
+          <span class="mono muted">STANDARD OPERATING PROCEDURE SOP-01</span>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <div class="process-num">01</div>
+            <h3>DETECTION</h3>
+            <p>Automated spectrum monitors, blueprint audits, and external creator tips flag potential anomalies.</p>
+          </article>
+          <article class="process-step">
+            <div class="process-num">02</div>
+            <h3>EVIDENCE COLLECTION</h3>
+            <p>Raw waveforms, silver-halide prints, and 3D LiDAR scans are captured under strict chain of custody.</p>
+          </article>
+          <article class="process-step">
+            <div class="process-num">03</div>
+            <h3>VERIFICATION</h3>
+            <p>DIV-02 analysts test for hoaxing, sensor error, or environmental interference before escalating.</p>
+          </article>
+          <article class="process-step">
+            <div class="process-num">04</div>
+            <h3>INVESTIGATION</h3>
+            <p>Field operatives reconstruct timelines and correlate findings across connected multiverse channels.</p>
+          </article>
+          <article class="process-step">
+            <div class="process-num">05</div>
+            <h3>RESOLUTION</h3>
+            <p>Each dossier is assigned a verified scientific explanation, containment protocol, or open watch status.</p>
+          </article>
+          <article class="process-step">
+            <div class="process-num">06</div>
+            <h3>ARCHIVAL DOCS</h3>
+            <p>Declassified findings and Official Case Reports are published in the permanent ANVESH Digital Archive.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- F. Latest Transmissions & Quick Solution Access -->
+      <section class="section" style="background:var(--bg-elevated)" aria-labelledby="heading-transmissions-home">
+        <div class="shell split-grid">
+          <div class="terminal-box" data-augmented-ui="tl-clip br-clip border">
+            <p class="eyebrow">INCOMING TRANSMISSION // LIVE LOG</p>
+            <h2 id="heading-transmissions-home" class="section-title" style="font-size:2.4rem;margin-bottom:12px">NOT EVERY MESSAGE HAS A <em>SENDER.</em></h2>
+            <p style="color:var(--text-secondary);font-size:0.9rem">A restricted communication was received by Central Command on frequency 09.71 MHz. Origin and authorization remain unverified.</p>
+            <div class="wave-bars" aria-hidden="true">▂ ▅ ▃ ▇ ▂ ▄ ▆ ▂ ▇ ▃ ▅ ▂ ▆ ▄ ▂ ▇ ▃ ▅</div>
+            <blockquote style="font-family:var(--display);font-size:1.6rem;margin:12px 0;color:var(--text)">“The investigation has already begun.”</blockquote>
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px">
+              <span class="mono muted">DISPATCH // 00-ALPHA — AUTH: UNVERIFIED</span>
+              <button type="button" class="btn btn-ghost" data-nav="transmissions" data-augmented-ui="tl-clip br-clip">ALL TRANSMISSIONS (5) →</button>
+            </div>
+          </div>
+
+          <div class="terminal-box" data-augmented-ui="tl-clip br-clip border">
+            <p class="eyebrow">CROSS-CHANNEL VERIFICATION</p>
+            <h2 class="section-title" style="font-size:2.4rem;margin-bottom:12px">CASE SOLUTION <em>ACCESS</em></h2>
+            <p style="color:var(--text-secondary);font-size:0.9rem">Recovered an ANVESH Signal Key from an active transmission? Enter it below to unlock the authorized explanation and linked dossier.</p>
+            <form id="home-solution-form" style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0">
+              <label for="home-solution-input" class="mono muted" style="width:100%;font-size:0.65rem">ENTER DEMONSTRATION SOLUTION CODE:</label>
+              <input id="home-solution-input" type="text" class="input-control" style="flex:1;min-width:180px" placeholder="e.g. ANV-SOL-001" value="ANV-SOL-001">
+              <button type="submit" class="btn btn-primary" data-augmented-ui="tl-clip br-clip">DECRYPT CODE ↗</button>
+            </form>
+            <div class="demo-code-pills">
+              <button type="button" class="code-pill" data-prefill-code="ANV-SOL-001">DEMO: ANV-SOL-001</button>
+              <button type="button" class="code-pill" data-prefill-code="ANV-SOL-002">DEMO: ANV-SOL-002</button>
+              <button type="button" class="code-pill" data-prefill-code="ANV-SOL-003">DEMO: ANV-SOL-003</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ====================================================================
+         VIEW 2: CASE ARCHIVES (#view-archives)
+         ==================================================================== -->
+    <section id="view-archives" class="app-view section shell" aria-labelledby="heading-archive-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SEARCHABLE &amp; FILTERABLE DATABASE // FICTIONAL RECORDS</p>
+          <h2 id="heading-archive-page" class="section-title">DECLASSIFIED <em>CASE ARCHIVES</em></h2>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <span id="archive-count" class="mono" style="color:var(--cyan)">SHOWING 6 DECLASSIFIED DOSSIERS</span>
+          <button type="button" class="btn btn-primary" data-open-doc="AV-164" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> OFFICIAL DOCUMENT GENERATOR</button>
+        </div>
+      </div>
+
+      <div class="filter-bar" role="search" aria-label="Filter Case Archives">
+        <div class="field-group">
+          <label for="archive-search">SEARCH CASE ID, KEYWORD OR OPERATIVE</label>
+          <input id="archive-search" type="search" class="input-control" placeholder="Search ANV-DIG-001, ALPHA-01, signal, frame, LiDAR...">
+        </div>
+        <div class="field-group">
+          <label for="filter-class">CLASSIFICATION</label>
+          <select id="filter-class" class="input-control">
+            <option value="ALL">ALL CLASSIFICATIONS</option>
+            <option value="DIG">DIG — Digital Anomaly</option>
+            <option value="ENT">ENT — Entity / Cognitive</option>
+            <option value="ENV">ENV — Environmental</option>
+            <option value="SUP">SUP — Supernatural</option>
+            <option value="TMP">TMP — Temporal Anomaly</option>
+            <option value="CLS">CLS — Classified Incident</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="filter-priority">PRIORITY LEVEL</label>
+          <select id="filter-priority" class="input-control">
+            <option value="ALL">ALL PRIORITIES</option>
+            <option value="CRITICAL">CRITICAL</option>
+            <option value="HIGH">HIGH</option>
+            <option value="ELEVATED">ELEVATED</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="filter-status">INVESTIGATION STATUS</label>
+          <select id="filter-status" class="input-control">
+            <option value="ALL">ALL STATUSES</option>
+            <option value="ACTIVE">ACTIVE (PUBLIC)</option>
+            <option value="UNDER REVIEW">UNDER REVIEW</option>
+            <option value="OPEN INVESTIGATION">OPEN INVESTIGATION</option>
+            <option value="CONTAINED">CONTAINED</option>
+            <option value="RESOLVED">RESOLVED</option>
+            <option value="RESTRICTED">RESTRICTED</option>
+          </select>
+        </div>
+        <button type="button" id="reset-filters-btn" class="btn btn-ghost" data-augmented-ui="tl-clip br-clip">RESET</button>
+      </div>
+
+      <div id="archive-grid" class="case-grid"></div>
+
+      <!-- Preserved Legacy Case IDs Anchor Index for Automated Audit Compatibility -->
+      <div hidden aria-hidden="true">
+        <span id="ANV-DIG-001"></span><span id="ANV-ENT-002"></span><span id="ANV-ENV-003"></span>
+        <span id="ANV-SUP-004"></span><span id="ANV-TMP-005"></span><span id="ANV-CLS-006"></span><span id="ANV-CLS-000"></span>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 3: INDIVIDUAL CASE DETAILS (#view-case-detail)
+         ==================================================================== -->
+    <section id="view-case-detail" class="app-view section shell" aria-label="Individual Case Dossier">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+        <button type="button" class="btn btn-ghost" data-nav="archives" data-augmented-ui="tl-clip br-clip">← BACK TO CASE ARCHIVES</button>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button type="button" class="btn btn-cyan" data-nav="solutions" data-augmented-ui="tl-clip br-clip">OPEN SOLUTION CODE TERMINAL <i class="fa-solid fa-key" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div id="dossier-content"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 4: OFFICIAL CASE DOCUMENT GENERATOR (#view-case-doc)
+         ==================================================================== -->
+    <section id="view-case-doc" class="app-view section shell" aria-labelledby="heading-doc-generator">
+      <div class="doc-toolbar no-print">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <button type="button" class="btn btn-ghost" data-nav="archives" data-augmented-ui="tl-clip br-clip">← ARCHIVES</button>
+          <div>
+            <span id="heading-doc-generator" class="mono" style="color:var(--cyan);display:block;font-size:0.65rem">OFFICIAL A4 INVESTIGATION REPORT TEMPLATE</span>
+            <label for="doc-case-selector" class="mono muted" style="font-size:0.62rem">SELECT CASE FILE:</label>
+          </div>
+          <select id="doc-case-selector" class="input-control" style="width:auto;min-width:260px">
+            <option value="AV-165" selected>AV-165 — IF SHERU BHAI OFFERS YOU MONEY (PUBLIC)</option>
+            <option value="AV-164">AV-164 — IF CHATGPT EVER SENDS "HI" (PUBLIC)</option>
+            <option value="ANV-DIG-001">ANV-DIG-001 — [PRIVATE]</option>
+            <option value="ANV-ENT-002">ANV-ENT-002 (ANV-MEM-002) — THE EMPTY FRAME</option>
+            <option value="ANV-ENV-003">ANV-ENV-003 — THE UNLISTED ROOM</option>
+            <option value="ANV-SUP-004">ANV-SUP-004 — THE MONOLITH ECHO</option>
+            <option value="ANV-TMP-005">ANV-TMP-005 — THE FORTY-EIGHT SECOND DRIFT</option>
+            <option value="ANV-CLS-006">ANV-CLS-006 — PROJECT GLASS HORIZON</option>
+            <option value="ANV-CLS-000">ANV-CLS-000 — PROTOCOL ALPHA-00: THE FIRST BREACH</option>
+          </select>
+        </div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button type="button" id="doc-print-btn" class="btn btn-primary" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-print" aria-hidden="true"></i> PRINT / SAVE AS PDF (A4)</button>
+          <button type="button" id="doc-download-html-btn" class="btn btn-cyan" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-file-code" aria-hidden="true"></i> DOWNLOAD REPORT (.HTML)</button>
+          <button type="button" id="doc-download-txt-btn" class="btn btn-ghost" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> DOWNLOAD DOSSIER (.TXT)</button>
+        </div>
+      </div>
+
+      <div id="official-doc-container" class="official-doc-sheet"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 5: AGENT REGISTRY (#view-agents)
+         ==================================================================== -->
+    <section id="view-agents" class="app-view section shell" aria-labelledby="heading-agent-registry">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CLASSIFIED PERSONNEL DATABASE // OPERATIVE PROFILES</p>
+          <h2 id="heading-agent-registry" class="section-title">DIRECTORATE <em>AGENT REGISTRY</em></h2>
+        </div>
+        <span id="agent-count" class="mono" style="color:var(--cyan)">SHOWING 7 OF 7 PERSONNEL DOSSIERS</span>
+      </div>
+
+      <div class="filter-bar filter-bar-5" role="search" aria-label="Filter Agent Registry">
+        <div class="field-group">
+          <label for="agent-search">SEARCH CODENAME, ID OR SPECIALISATION</label>
+          <input id="agent-search" type="search" class="input-control" placeholder="Search ALPHA-01, ALPHA-02, ALPHA-00, SIGINT, LiDAR...">
+        </div>
+        <div class="field-group">
+          <label for="agent-filter-division">DIVISION</label>
+          <select id="agent-filter-division" class="input-control">
+            <option value="ALL">ALL DIVISIONS</option>
+            <option value="DIV-01">DIV-01 // Investigation</option>
+            <option value="DIV-02">DIV-02 // Research &amp; Analysis</option>
+            <option value="DIV-03">DIV-03 // Anomaly Containment</option>
+            <option value="DIV-04">DIV-04 // Communications</option>
+            <option value="DIV-06">DIV-06 // Multiverse Studies</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="agent-filter-rank">OPERATIVE RANK</label>
+          <select id="agent-filter-rank" class="input-control">
+            <option value="ALL">ALL RANKS</option>
+            <option value="GRADE-V">GRADE-V // Lead Commander</option>
+            <option value="GRADE-IV">GRADE-IV // Senior / Principal</option>
+            <option value="GRADE-III">GRADE-III // Specialist [Demo]</option>
+            <option value="OMEGA">OMEGA // Founder</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="agent-filter-clearance">CLEARANCE LEVEL</label>
+          <select id="agent-filter-clearance" class="input-control">
+            <option value="ALL">ALL CLEARANCES</option>
+            <option value="OMEGA">OMEGA CLEARANCE</option>
+            <option value="LEVEL 04">LEVEL 04</option>
+            <option value="LEVEL 03">LEVEL 03</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="agent-filter-status">OPERATIONAL STATUS</label>
+          <select id="agent-filter-status" class="input-control">
+            <option value="ALL">ALL STATUSES</option>
+            <option value="ACTIVE">ACTIVE</option>
+            <option value="ON-SITE CONTAINMENT">ON-SITE CONTAINMENT</option>
+            <option value="RESTRICTED">RESTRICTED</option>
+          </select>
+        </div>
+        <button type="button" id="reset-agent-filters-btn" class="btn btn-ghost" data-augmented-ui="tl-clip br-clip">RESET</button>
+      </div>
+
+            <!-- Uploaded Tactical Operatives Overview Banner (Secret CEO / Agent 01 / Agent 02) -->
+      <div class="tactical-trio-banner cyber-neon-border" data-augmented-ui="tl-clip br-clip border">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+          <span class="mono" style="color:var(--cyber-cyan)"><i class="fa-solid fa-id-card-clip" aria-hidden="true"></i> COMMAND &amp; FIELD TRIAD // VISUAL IDENTIFICATION MATRIX (ANV-CEO-001 • ANV-AGT-001 • ANV-AGT-002)</span>
+          <span class="badge badge-red"><i class="fa-solid fa-lock" aria-hidden="true"></i> TOP SECRET // LEVEL 05</span>
+        </div>
+        <img src="assets/agents-tactical-trio.jpg" alt="ANVESH Directorate Tactical Triad: Secret CEO (ANV-CEO-001), Agent 01 Field Investigator (ANV-AGT-001), and Agent 02 Research Specialist (ANV-AGT-002)" loading="lazy" width="1536" height="1024">
+      </div>
+
+      <div id="agent-grid" class="case-grid"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 6: INDIVIDUAL AGENT DETAIL (#view-agent-detail)
+         ==================================================================== -->
+    <section id="view-agent-detail" class="app-view section shell" aria-label="Operative Personnel Dossier">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+        <button type="button" class="btn btn-ghost" data-nav="agents" data-augmented-ui="tl-clip br-clip">← BACK TO AGENT REGISTRY</button>
+        <button type="button" class="btn btn-cyan" data-nav="archives" data-augmented-ui="tl-clip br-clip">VIEW ALL CASE ARCHIVES ↗</button>
+      </div>
+      <div id="agent-detail-content"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 7: MULTIVERSE INDEX (#view-multiverse)
+         ==================================================================== -->
+    <section id="view-multiverse" class="app-view section shell" aria-labelledby="heading-multiverse-index">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">FICTIONAL STORY-WORLD TOPOLOGY // TIMELINE BRANCHES</p>
+          <h2 id="heading-multiverse-index" class="section-title">MULTIVERSE INDEX — <em>REALITY &amp; TIMELINE DATABASE</em></h2>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <button type="button" id="mv-toggle-table-btn" class="btn btn-cyan" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-table-list" aria-hidden="true"></i> TOGGLE ACCESSIBLE TABLE VIEW</button>
+        </div>
+      </div>
+
+      <div class="multiverse-map-box cyber-datastream" data-augmented-ui="tl-clip br-clip border">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+          <span class="mono" style="color:var(--cyan)">INTERACTIVE MULTIVERSE TOPOLOGY MAP (CLICK OR TAB+ENTER ANY NODE TO OPEN PROFILE)</span>
+          <span class="badge badge-purple">FICTIONAL STORY-WORLD DATA</span>
+        </div>
+        <svg id="multiverse-svg-map" class="multiverse-svg-stage" viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg" role="region" aria-label="Interactive Multiverse Node Map"></svg>
+      </div>
+
+      <!-- Accessible Table View (Toggled or always reachable for screen readers) -->
+      <div id="multiverse-table-wrap" class="data-table-wrap">
+        <table class="data-table" aria-label="Multiverse Reality and Timeline Index Table">
+          <thead>
+            <tr>
+              <th>Reality ID</th>
+              <th>Designation &amp; Name</th>
+              <th>Timeline Class</th>
+              <th>Current Status</th>
+              <th>Origin Case</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="multiverse-table-body"></tbody>
+        </table>
+      </div>
+
+      <div id="multiverse-grid" class="case-grid"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 8: INDIVIDUAL REALITY DETAIL (#view-reality-detail)
+         ==================================================================== -->
+    <section id="view-reality-detail" class="app-view section shell" aria-label="Reality Profile Record">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+        <button type="button" class="btn btn-ghost" data-nav="multiverse" data-augmented-ui="tl-clip br-clip">← BACK TO MULTIVERSE INDEX</button>
+        <button type="button" class="btn btn-cyan" data-nav="archives" data-augmented-ui="tl-clip br-clip">OPEN CASE ARCHIVES ↗</button>
+      </div>
+      <div id="reality-detail-content"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 9: EVIDENCE ROOM (#view-evidence)
+         ==================================================================== -->
+    <section id="view-evidence" class="app-view section shell" aria-labelledby="heading-evidence-room">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CENTRAL FORENSIC REPOSITORY // 8 CATEGORIES</p>
+          <h2 id="heading-evidence-room" class="section-title">DIRECTORATE <em>EVIDENCE ROOM</em></h2>
+        </div>
+        <span id="evidence-count" class="mono" style="color:var(--cyan)">SHOWING 12 FORENSIC EVIDENCE ITEMS</span>
+      </div>
+
+      <div class="filter-bar filter-bar-5" role="search" aria-label="Filter Evidence Room">
+        <div class="field-group">
+          <label for="evidence-search">SEARCH EVIDENCE ID, TITLE OR AGENT</label>
+          <input id="evidence-search" type="search" class="input-control" placeholder="Search EVD-001A, WAV, blueprint, LiDAR, ALPHA-02...">
+        </div>
+        <div class="field-group">
+          <label for="evidence-filter-case">FILTER BY CASE</label>
+          <select id="evidence-filter-case" class="input-control">
+            <option value="ALL">ALL CASES</option>
+            <option value="AV-165">AV-165 (Sheru Bhai Money Offer — Active)</option>
+            <option value="AV-164">AV-164 (ChatGPT "Hi!" — Active)</option>
+            <option value="ANV-DIG-001">ANV-DIG-001 (Private)</option>
+            <option value="ANV-ENT-002">ANV-ENT-002 (Empty Frame)</option>
+            <option value="ANV-ENV-003">ANV-ENV-003 (Unlisted Room)</option>
+            <option value="ANV-SUP-004">ANV-SUP-004 (Monolith Echo)</option>
+            <option value="ANV-TMP-005">ANV-TMP-005 (48s Drift)</option>
+            <option value="ANV-CLS-006">ANV-CLS-006 (Glass Horizon)</option>
+            <option value="ANV-CLS-000">ANV-CLS-000 (Origin Breach)</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="evidence-filter-cat">EVIDENCE CATEGORY</label>
+          <select id="evidence-filter-cat" class="input-control">
+            <option value="ALL">ALL 8 CATEGORIES</option>
+            <option value="AUDIO RECORDINGS">AUDIO RECORDINGS</option>
+            <option value="VIDEO RECORDINGS">VIDEO RECORDINGS</option>
+            <option value="PHOTOGRAPHIC EVIDENCE">PHOTOGRAPHIC EVIDENCE</option>
+            <option value="DOCUMENTS">DOCUMENTS</option>
+            <option value="DIGITAL FORENSICS">DIGITAL FORENSICS</option>
+            <option value="SCIENTIFIC READINGS">SCIENTIFIC READINGS</option>
+            <option value="TRANSMISSION LOGS">TRANSMISSION LOGS</option>
+            <option value="PHYSICAL OBJECT RECORDS">PHYSICAL OBJECT RECORDS</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="evidence-filter-ver">VERIFICATION STATUS</label>
+          <select id="evidence-filter-ver" class="input-control">
+            <option value="ALL">ALL STATUSES</option>
+            <option value="FICTIONAL VERIFIED">FICTIONAL VERIFIED</option>
+            <option value="FLAGGED">FLAGGED ANOMALY</option>
+            <option value="UNVERIFIED">UNVERIFIED ORIGIN</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="evidence-sort-date">SORT BY DATE</label>
+          <select id="evidence-sort-date" class="input-control">
+            <option value="DESC">NEWEST FIRST</option>
+            <option value="ASC">OLDEST FIRST</option>
+          </select>
+        </div>
+        <button type="button" id="reset-evidence-filters-btn" class="btn btn-ghost" data-augmented-ui="tl-clip br-clip">RESET</button>
+      </div>
+
+      <div id="evidence-grid" class="case-grid"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 10: INDIVIDUAL EVIDENCE DETAIL (#view-evidence-detail)
+         ==================================================================== -->
+    <section id="view-evidence-detail" class="app-view section shell" aria-label="Forensic Evidence Detail and Chain of Custody">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+        <button type="button" class="btn btn-ghost" data-nav="evidence" data-augmented-ui="tl-clip br-clip">← BACK TO EVIDENCE ROOM</button>
+        <button type="button" class="btn btn-cyan" data-nav="archives" data-augmented-ui="tl-clip br-clip">OPEN CASE ARCHIVES ↗</button>
+      </div>
+      <div id="evidence-detail-content"></div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 11: CASE SOLUTION ACCESS (#view-solutions)
+         ==================================================================== -->
+    <section id="view-solutions" class="app-view section shell" aria-labelledby="heading-solutions-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CROSS-CHANNEL VERIFICATION TERMINAL</p>
+          <h2 id="heading-solutions-page" class="section-title">CASE SOLUTION <em>ACCESS</em></h2>
+        </div>
+        <span class="badge badge-purple">FICTIONAL INTERACTIVE FEATURE</span>
+      </div>
+
+      <div class="split-grid">
+        <div class="terminal-box" data-augmented-ui="tl-clip br-clip border">
+          <h3 style="font-family:var(--display);font-size:1.6rem;margin:0 0 8px">ENTER AUTHORISED SOLUTION CODE</h3>
+          <p style="color:var(--text-secondary);font-size:0.9rem;margin:0 0 16px">Enter an authorized ANVESH Signal Key below to decrypt the override log, case summary, and linked dossier. Enter a code below to unlock its declassified forensic explanation, linked case dossier, and official printable report.</p>
+
+          <form id="solution-form">
+            <div class="field-group" style="margin-bottom:14px">
+              <label for="solution-code-input">SOLUTION CODE IDENTIFIER</label>
+              <input id="solution-code-input" type="text" class="input-control" placeholder="Enter AV-165-G-SHERU or AV-164-MV-GPT" autocomplete="off" required>
+            </div>
+            <button type="submit" id="solution-submit-btn" class="btn btn-primary" style="width:100%" data-augmented-ui="tl-clip br-clip">VERIFY &amp; DECRYPT SOLUTION RECORD ↗</button>
+          </form>
+
+          <div style="margin-top:16px">
+            <span class="mono muted" style="display:block;margin-bottom:8px">CLICK TO TEST ACTIVE ARCHIVE CLEARANCE KEYS:</span>
+            <div class="demo-code-pills">
+              <button type="button" class="code-pill" data-prefill-code="AV-165-G-SHERU" style="border-color:var(--gold,#ffce44);color:var(--gold,#ffce44)">AV-165-G-SHERU (File AV-165 — Active)</button>
+              <button type="button" class="code-pill" data-prefill-code="AV-164-MV-GPT" style="border-color:var(--cyan);color:var(--cyan)">AV-164-MV-GPT (File AV-164 — Active)</button>
+              <button type="button" class="code-pill" data-nav="403" style="opacity:0.65;border-color:var(--red-border);color:#ff8088">LEGACY ARCHIVES (PRIVATE)</button>
+            </div>
+          </div>
+
+          <div id="solution-loading" class="solution-result" hidden aria-live="polite">
+            <span class="mono" style="color:var(--cyan)"><i class="fa-solid fa-rotate fa-spin" aria-hidden="true"></i> RUNNING CRYPTOGRAPHIC HASH CHECK AGAINST NODE IND-01...</span>
+          </div>
+
+          <div id="solution-output" class="solution-result" hidden aria-live="polite"></div>
+        </div>
+
+        <div class="terminal-box" data-augmented-ui="tl-clip br-clip border">
+          <p class="eyebrow">SECURITY &amp; ARCHITECTURE TRANSPARENCY</p>
+          <h3 style="font-family:var(--display);font-size:1.6rem;margin:0 0 10px">HOW THE SOLUTION CODE SYSTEM WORKS</h3>
+          <p style="color:var(--text-secondary);font-size:0.88rem">1. <strong>Fictional Demonstration Status:</strong> Codes <code>ANV-SOL-001</code>, <code>ANV-SOL-002</code>, and <code>ANV-SOL-003</code> are initial demonstration codes designed to showcase cross-channel storytelling. External creator content is only integrated with explicit permission.</p>
+          <p style="color:var(--text-secondary);font-size:0.88rem">2. <strong>Client-Side vs. Server-Side Validation:</strong> Any code table stored in browser JavaScript can be inspected via Developer Tools. We never misrepresent frontend-only checks as cryptographic security.</p>
+          <p style="color:var(--text-secondary);font-size:0.88rem">3. <strong>Netlify Functions Backend Included:</strong> For genuine secret code protection during live creator events, the downloadable project package includes a ready-to-deploy serverless endpoint at <code>netlify/functions/validate-code.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 12: ABOUT ANVESH (#view-about)
+         ==================================================================== -->
+    <section id="view-about" class="app-view section shell" aria-labelledby="heading-about-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">ORIGIN &amp; STORYTELLING MISSION</p>
+          <h2 id="heading-about-page" class="section-title">ABOUT <em>ANVESH MULTIVERSE</em></h2>
+        </div>
+        <span class="badge badge-cyan">ANV-001 // LORE BRIEFING</span>
+      </div>
+
+            <div class="tactical-trio-banner cyber-neon-border" data-augmented-ui="tl-clip br-clip border" style="margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+          <span class="mono" style="color:var(--cyber-cyan)"><i class="fa-solid fa-satellite" aria-hidden="true"></i> ANVESH MULTIVERSE // OFFICIAL KEY ART &amp; DIMENSIONAL ARCHIVE OVERVIEW</span>
+          <span class="badge badge-purple">ONE AGENCY • COUNTLESS REALITIES</span>
+        </div>
+        <img src="assets/anvesh-keyart-banner.jpg" alt="ANVESH Directorate Key Art — Investigate. Verify. Understand. A Multiverse of Mysteries" loading="lazy" width="1600" height="893">
+      </div>
+
+      <div class="split-grid">
+        <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+          <h3>WE RECORD WHAT REMAINS</h3>
+          <p style="color:var(--text-secondary)"><strong>ANVESH Directorate</strong> (Anomaly Network for Verification, Evidence, Science &amp; History) is a fictional secret research organisation and the narrative anchor of the <strong>ANVESH Multiverse</strong>.</p>
+          <p style="color:var(--text-secondary)">Across our connected YouTube investigations, official case reports, Agent Registry, Multiverse Index, and Evidence Room, the Directorate examines unexplained transmissions, digital anomalies, architectural impossibilities, and disturbances rippling across parallel timelines.</p>
+          <p style="color:var(--text-secondary)">Our core mandate—<strong>“INVESTIGATE. VERIFY. UNDERSTAND.”</strong>—treats mystery storytelling with the rigor of a forensic laboratory: every claim requires evidence, and every investigation brings us closer to the truth.</p>
+        </div>
+
+        <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+          <h3>ETHICAL &amp; FICTIONAL TRANSPARENCY</h3>
+          <p style="color:var(--text-secondary)">While our interface is inspired by classified scientific archives and anomaly containment facilities, ANVESH Multiverse is strictly an <strong>original work of fictional entertainment</strong>.</p>
+          <ul style="color:var(--text-secondary);font-size:0.88rem;padding-left:18px">
+            <li>We never impersonate real government, military, intelligence, scientific, or emergency-response agencies.</li>
+            <li>Viewers can opt out of atmospheric horror visuals at any moment using the persistent <strong>Safe Exit / Neutral View</strong> control at the top of every page.</li>
+            <li>All external YouTube collaborations are consensual narrative crossovers.</li>
+          </ul>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            <button type="button" class="btn btn-primary" data-nav="archives" data-augmented-ui="tl-clip br-clip">BROWSE CASE ARCHIVES ↗</button>
+            <button type="button" class="btn btn-ghost" data-nav="disclaimer" data-augmented-ui="tl-clip br-clip">READ FULL DISCLAIMER →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 13: DIRECTORATE STRUCTURE (#view-structure)
+         ==================================================================== -->
+    <section id="view-structure" class="app-view section shell" aria-labelledby="heading-structure-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">ORGANISATIONAL HIERARCHY &amp; CLEARANCE TIERS</p>
+          <h2 id="heading-structure-page" class="section-title">DIRECTORATE <em>STRUCTURE</em></h2>
+        </div>
+        <button type="button" class="btn btn-cyan" data-nav="agents" data-augmented-ui="tl-clip br-clip">OPEN AGENT REGISTRY (7 PROFILES) ↗</button>
+      </div>
+
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="margin-bottom:24px">
+        <h3>CLEARANCE TIERS &amp; REGIONAL NODES</h3>
+        <div class="case-grid" style="margin-top:16px">
+          <div style="padding:16px;background:var(--bg-void);border:1px solid var(--line)">
+            <span class="badge badge-cyan">CLEARANCE LEVEL 01–02</span>
+            <h4 style="font-family:var(--display);font-size:1.3rem;margin:8px 0 4px">PUBLIC ARCHIVE OBSERVER</h4>
+            <p style="font-size:0.84rem;color:var(--text-secondary);margin:0">Granted to all visitors of the public terminal. Full access to declassified dossiers, official A4 case reports, and the Case Solution Access system.</p>
+          </div>
+          <div style="padding:16px;background:var(--bg-void);border:1px solid var(--line)">
+            <span class="badge badge-purple">CLEARANCE LEVEL 03–04</span>
+            <h4 style="font-family:var(--display);font-size:1.3rem;margin:8px 0 4px">FIELD &amp; RESEARCH OPERATIVES</h4>
+            <p style="font-size:0.84rem;color:var(--text-secondary);margin:0">Assigned to Division specialists (ALPHA-01, ALPHA-02, ALPHA-03, ALPHA-04) operating across Regional Nodes IND-01, IND-02, and ARC-04.</p>
+          </div>
+          <div style="padding:16px;background:var(--bg-void);border:1px solid var(--red-border)">
+            <span class="badge badge-red">OMEGA // ALPHA-00</span>
+            <h4 style="font-family:var(--display);font-size:1.3rem;margin:8px 0 4px">DIRECTORATE COUNCIL DESK</h4>
+            <p style="font-size:0.84rem;color:var(--text-secondary);margin:0">Oversees cross-timeline convergence files. Tip: Type <code>ALPHA</code> on your keyboard or enter <code>ALPHA-00</code> in Solution Access to inspect the Origin Dossier.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="division-grid">
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>01 // INVESTIGATION DIVISION</h3><p>Field incident reconstruction, witness correlation, and physical site reconnaissance across reported anomaly zones.</p></article>
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>02 // RESEARCH &amp; ANALYSIS</h3><p>Materials science, optical interferometry, and double-blind testing to separate natural phenomena from true anomalies.</p></article>
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>03 // ANOMALY CONTAINMENT</h3><p>Deployment of acoustic dampening domes, Faraday cages, and architectural quarantine barriers.</p></article>
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>04 // COMMUNICATIONS</h3><p>Monitoring of 09.71 MHz carrier anomalies, Baudot/sub-carrier decoding, and inter-node telemetry security.</p></article>
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>05 // ARCHIVE &amp; RECORDS</h3><p>Preservation of physical magnetic reels, silver-halide prints, diazo blueprints, and public declassification logs.</p></article>
+        <article class="division-card" data-augmented-ui="tl-clip br-clip border"><h3>06 // MULTIVERSE STUDIES</h3><p>Tracking chronological drift (Case ANV-TMP-005) and alternate Directorate handshakes (Node IND-02).</p></article>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 14: TRANSMISSIONS (#view-transmissions)
+         ==================================================================== -->
+    <section id="view-transmissions" class="app-view section shell" aria-labelledby="heading-transmissions-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SIGNAL INTELLIGENCE DISPATCH LOG</p>
+          <h2 id="heading-transmissions-page" class="section-title">INTERCEPTED <em>TRANSMISSIONS</em></h2>
+        </div>
+        <button type="button" class="btn btn-cyan" data-open-dossier="AV-164" data-augmented-ui="tl-clip br-clip">INSPECT SIGNAL CASE ANV-DIG-001 ↗</button>
+      </div>
+
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+        <div class="mono muted">DISPATCH ID: TX-00-ALPHA // FREQ: 09.71 MHz // AUTHENTICATION: UNVERIFIED</div>
+        <h3 style="margin-top:6px">“THE INVESTIGATION HAS ALREADY BEGUN.”</h3>
+        <p style="color:var(--text-secondary)">Intercepted on Central Command emergency band. Acoustic profile matches no known terrestrial transmitter. Waveform exhibits reverse-time phase symmetry.</p>
+        <button type="button" class="link-chip" data-open-evidence="EVD-164A"><i class="fa-solid fa-microscope" aria-hidden="true"></i> INSPECT MAGNETIC REEL EVD-000A <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+      </div>
+
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+        <div class="mono muted">DISPATCH ID: TX-04-ECHO // FREQ: 1420.405 MHz // SOURCE: NODE ARC-04</div>
+        <h3 style="margin-top:6px">CESIUM CLOCK DRIFT ADVISORY (+48.004 SECONDS)</h3>
+        <p style="color:var(--text-secondary)">Automated telemetry alert from Vault C1 confirming a 48-second chronological divergence during optical-lattice synchronization. Linked to Case <strong>ANV-TMP-005</strong>.</p>
+        <button type="button" class="link-chip" data-open-evidence="EVD-164B"><i class="fa-solid fa-microscope" aria-hidden="true"></i> INSPECT FILE AV-164 LOG EVD-164B <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+      </div>
+
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+        <div class="mono muted">DISPATCH ID: TX-09-MIRROR // SOURCE: PARALLEL NODE IND-02</div>
+        <h3 style="margin-top:6px">HANDSHAKE CERTIFICATE MISMATCH</h3>
+        <p style="color:var(--text-secondary)">Fiber trunk 09 received a valid Directorate cryptographic signature dated 11 years before the founding of Node IND-01. Linked to Case <strong>ANV-CLS-006</strong>.</p>
+        <button type="button" class="link-chip" data-open-evidence="EVD-164C"><i class="fa-solid fa-microscope" aria-hidden="true"></i> INSPECT OVERRIDE LOG EVD-164C <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 15: CONTACT (#view-contact)
+         ==================================================================== -->
+    <section id="view-contact" class="app-view section shell" aria-labelledby="heading-contact-page">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COMMUNICATIONS RELAY &amp; CREATOR COLLABORATIONS</p>
+          <h2 id="heading-contact-page" class="section-title">CONTACT THE <em>DIRECTORATE</em></h2>
+        </div>
+        <span class="mono muted">LIVE DATABASE RELAY // SUPABASE CONNECTED</span>
+      </div>
+
+      <div class="split-grid">
+        <div class="terminal-box" data-augmented-ui="tl-clip br-clip border">
+          <h3 style="font-family:var(--display);font-size:1.5rem;margin:0 0 12px">SUBMIT ANOMALY LEAD OR CREATOR INQUIRY</h3>
+          <form id="anomaly-report-form" name="anvesh-contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="anvesh-contact">
+            <div class="field-group" style="margin-bottom:12px">
+              <label for="report-name">OBSERVER / CREATOR DESIGNATION (NAME)</label>
+              <input id="report-name" name="name" type="text" class="input-control" required placeholder="e.g. Analyst Verma / Channel Name">
+            </div>
+            <div class="field-group" style="margin-bottom:12px">
+              <label for="report-email">RETURN DISPATCH ADDRESS (EMAIL)</label>
+              <input id="report-email" name="email" type="email" class="input-control" required placeholder="observer@example.com">
+            </div>
+            <div class="field-group" style="margin-bottom:12px">
+              <label for="report-type">TRANSMISSION CATEGORY</label>
+              <select id="report-type" name="category" class="input-control">
+                <option value="Creator Collaboration">YouTube Creator Collaboration / Solution Code Request</option>
+                <option value="Fictional Anomaly Tip">Fictional Anomaly Story Lead</option>
+                <option value="General Feedback">Website Feedback / General Inquiry</option>
+              </select>
+            </div>
+            <div class="field-group" style="margin-bottom:16px">
+              <label for="report-message">TRANSMISSION DETAILS</label>
+              <textarea id="report-message" name="message" rows="4" class="input-control" required placeholder="Provide details of your inquiry or fictional anomaly report..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%" data-augmented-ui="tl-clip br-clip">TRANSMIT DISPATCH ↗</button>
+          </form>
+          <div id="contact-feedback" class="solution-result" hidden aria-live="polite"></div>
+        </div>
+
+        <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+          <h3>DIRECT COMMUNICATIONS RELAY</h3>
+          <p style="color:var(--text-secondary);margin-bottom:10px">For direct inquiries, creator collaborations, or archive clearance requests, email the ANVESH Directorate directly:</p>
+          <p style="margin:0 0 18px"><a href="mailto:anveshdirectorate@proton.me" class="btn btn-cyan" style="padding:9px 16px;font-size:0.78rem;text-transform:none;letter-spacing:0.04em"><i class="fa-solid fa-envelope" aria-hidden="true"></i> anveshdirectorate@proton.me</a></p>
+          <h3>OFFICIAL SOCIAL CHANNELS</h3>
+          <div class="social-network-grid" aria-label="Official ANVESH Directorate Social Channels">
+            <a href="https://www.youtube.com/channel/UCAIOEGH046adQrZzxKQEWJA" target="_blank" rel="noopener noreferrer" class="social-pill" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
+            <a href="https://x.com/AnveshDirectora" target="_blank" rel="noopener noreferrer" class="social-pill" title="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span>X</span></a>
+            <a href="https://www.instagram.com/anveshdirectorate/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            <a href="https://www.threads.com/@anveshdirectorate" target="_blank" rel="noopener noreferrer" class="social-pill" title="Threads"><i class="fa-brands fa-threads" aria-hidden="true"></i><span>Threads</span></a>
+            <a href="https://discord.gg/FpYCg7GJF9" target="_blank" rel="noopener noreferrer" class="social-pill" title="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i><span>Discord</span></a>
+            <a href="https://t.me/AnveshDirectorate" target="_blank" rel="noopener noreferrer" class="social-pill" title="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i><span>Telegram</span></a>
+            <a href="https://github.com/AnveshDirectorate" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/anvesh-directorate-076425451" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+            <a href="https://m.facebook.com/61596870780144/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+            <a href="https://gravatar.com/devotedlyfire19d7480b95" target="_blank" rel="noopener noreferrer" class="social-pill" title="Gravatar / WordPress"><img src="assets/gravatar-icon.svg" alt="" class="social-svg-icon" aria-hidden="true"><span>Gravatar</span></a>
+          </div>
+          <h3 style="margin-top:22px">PARTICIPATING CREATOR GUIDELINES</h3>
+          <p style="color:var(--text-secondary)">Are you a mystery, ARG, or analog horror filmmaker interested in connecting your story to the <strong>ANVESH Multiverse</strong>?</p>
+          <p style="color:var(--text-secondary)">We issue custom <code>ANV-SOL-XXX</code> Solution Codes exclusively with mutual creator consent, allowing your audience to decrypt lore extensions directly on the ANVESH Archive while driving viewers back to your channel.</p>
+          <p class="mono muted" style="margin-top:18px">DISPATCH PROTOCOL: Submissions are logged under Status: OPEN for Directorate review. Email addresses remain confidential.</p>
+        </div>
+      </div>
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="margin-top:26px">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+          <div>
+            <p class="eyebrow" style="margin:0 0 4px">LIVE ARCHIVE DISPATCH LOG</p>
+            <h3 style="margin:0;font-family:var(--display);font-size:1.55rem">SUBMITTED USER DISPATCHES (OPEN / CLOSED)</h3>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center" id="dispatch-filter-bar">
+            <button type="button" class="code-pill dispatch-filter-btn active-filter" data-dispatch-filter="ALL">ALL</button>
+            <button type="button" class="code-pill dispatch-filter-btn" data-dispatch-filter="OPEN">● OPEN</button>
+            <button type="button" class="code-pill dispatch-filter-btn" data-dispatch-filter="CLOSED">● CLOSED</button>
+            <button type="button" id="refresh-dispatches-btn" class="btn btn-ghost" style="padding:6px 12px;font-size:0.68rem"><i class="fa-solid fa-rotate" aria-hidden="true"></i> REFRESH</button>
+          </div>
+        </div>
+        <div id="public-dispatches-list" class="dispatch-board-grid" aria-live="polite">
+          <p class="mono muted" style="margin:8px 0">CONNECTING TO ANVESH DISPATCH DATABASE...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEWS 16, 17, 18: LEGAL & DISCLAIMER PAGES (#view-privacy, #view-terms, #view-disclaimer)
+         ==================================================================== -->
+    <section id="view-privacy" class="app-view section shell" aria-labelledby="heading-privacy">
+      <p class="eyebrow">DATA PROTECTION &amp; ZERO-SURVEILLANCE POLICY</p>
+      <h2 id="heading-privacy" class="section-title" style="margin-bottom:20px">PRIVACY <em>POLICY</em></h2>
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+        <h3>1. NO TRACKING OR INVASIVE ANALYTICS</h3>
+        <p style="color:var(--text-secondary)">The ANVESH Directorate website does not load third-party advertising trackers, behavioral fingerprinting scripts, or covert analytics cookies.</p>
+        <h3>2. LOCAL PREFERENCE STORAGE</h3>
+        <p style="color:var(--text-secondary)">Your <strong>Safe Exit / Neutral View</strong> preference is stored locally in your own browser via <code>localStorage</code> (`anvesh_safe_exit`) solely to remember your accessibility choice across reloads.</p>
+        <h3>3. VOLUNTARY CONTACT SUBMISSIONS</h3>
+        <p style="color:var(--text-secondary)">Information submitted through the Contact form or sent to <a href="mailto:anveshdirectorate@proton.me" style="color:var(--cyan)">anveshdirectorate@proton.me</a> is used exclusively to respond to creator collaboration or project inquiries and is never sold or shared with third parties.</p>
+      </div>
+    </section>
+
+    <section id="view-terms" class="app-view section shell" aria-labelledby="heading-terms">
+      <p class="eyebrow">INTELLECTUAL PROPERTY &amp; USAGE GUIDELINES</p>
+      <h2 id="heading-terms" class="section-title" style="margin-bottom:20px">TERMS OF <em>USE</em></h2>
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border">
+        <h3>1. CREATIVE UNIVERSE OWNERSHIP</h3>
+        <p style="color:var(--text-secondary)">All original ANVESH Directorate branding, case narratives, emblems, and custom illustrations are part of the ANVESH Multiverse creative project.</p>
+        <h3>2. RESPECTFUL COMMUNITY PARTICIPATION</h3>
+        <p style="color:var(--text-secondary)">Visitors are encouraged to share theories, decode Solution Codes, and discuss case files. Users must not misrepresent fictional ANVESH records as real-world government advisories or emergency alerts.</p>
+        <h3>3. EXTERNAL CREATOR PERMISSIONS</h3>
+        <p style="color:var(--text-secondary)">Cross-channel Solution Codes and linked investigations are integrated strictly with the permission of participating creators.</p>
+      </div>
+    </section>
+
+    <section id="view-disclaimer" class="app-view section shell" aria-labelledby="heading-disclaimer">
+      <p class="eyebrow">MANDATORY TRANSPARENCY STATEMENT</p>
+      <h2 id="heading-disclaimer" class="section-title" style="margin-bottom:20px">FICTIONAL UNIVERSE <em>DISCLAIMER</em></h2>
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="border-color:var(--red-border)">
+        <h3>100% FICTIONAL ENTERTAINMENT PROJECT</h3>
+        <p style="color:var(--text)"><strong>ANVESH Multiverse</strong> and the <strong>ANVESH Directorate</strong> are entirely fictional creations designed for mystery storytelling, analog horror entertainment, and interactive worldbuilding.</p>
+        <p style="color:var(--text-secondary)">All personnel designations (including ALPHA-01, ALPHA-02, ALPHA-03, ALPHA-04, and ALPHA-00), case files, official investigation documents, reality indices, forensic evidence records, telemetry coordinates, and clearance codes depicted on this website are imaginary.</p>
+        <p style="color:var(--text-secondary)">This website is <strong>not</strong> affiliated with, endorsed by, or representative of any real-world government, intelligence agency, law-enforcement body, scientific institute, or emergency-response service. In the event of any real-world emergency, always contact your local official emergency services.</p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEWS 19, 20, 21: CUSTOM ERROR PAGES (#view-404, #view-403, #view-500)
+         ==================================================================== -->
+    <section id="view-404" class="app-view section shell" aria-labelledby="heading-404">
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="text-align:center;padding:56px 24px">
+        <span class="badge badge-cyan">HTTP STATUS 404 // COORDINATE UNMAPPED</span>
+        <h2 id="heading-404" class="section-title" style="margin:14px 0">TIMELINE RECORD <em>NOT FOUND</em></h2>
+        <p style="color:var(--text-secondary);max-width:540px;margin:0 auto 24px">The archive sector or URL coordinate you requested does not exist in Baseline Node IND-01. It may have been relocated or never recorded.</p>
+        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+          <button type="button" class="btn btn-primary" data-nav="home" data-augmented-ui="tl-clip br-clip">RETURN TO HOMEPAGE ↗</button>
+          <button type="button" class="btn btn-cyan" data-nav="archives" data-augmented-ui="tl-clip br-clip">BROWSE CASE ARCHIVES</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-403" class="app-view section shell" aria-labelledby="heading-403">
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="text-align:center;padding:56px 24px;border-color:var(--red-border)">
+        <span class="badge badge-red">HTTP STATUS 403 // CLEARANCE INSUFFICIENT</span>
+        <h2 id="heading-403" class="section-title" style="margin:14px 0">ACCESS <em>RESTRICTED</em></h2>
+        <p style="color:var(--text-secondary);max-width:540px;margin:0 auto 24px">This archive file is currently set to PRIVATE and requires elevated Directorate clearance. For inquiries, contact <a href="mailto:anveshdirectorate@proton.me" style="color:var(--cyan)">anveshdirectorate@proton.me</a>, or explore active public Case File <strong>AV-164</strong>.</p>
+        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+          <button type="button" class="btn btn-primary" data-nav="home" data-augmented-ui="tl-clip br-clip">RETURN TO HOMEPAGE ↗</button>
+          <button type="button" class="btn btn-cyan" data-nav="solutions" data-augmented-ui="tl-clip br-clip">ENTER SOLUTION CODE <i class="fa-solid fa-key" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-500" class="app-view section shell" aria-labelledby="heading-500">
+      <div class="dossier-block" data-augmented-ui="tl-clip br-clip border" style="text-align:center;padding:56px 24px;border-color:var(--purple-border)">
+        <span class="badge badge-purple">HTTP STATUS 500 // RELAY DESYNC</span>
+        <h2 id="heading-500" class="section-title" style="margin:14px 0">TELEMETRY RELAY <em>FAULT</em></h2>
+        <p style="color:var(--text-secondary);max-width:540px;margin:0 auto 24px">An unexpected internal fault interrupted the archive relay. Server internals remain masked for security. Please return to the main terminal.</p>
+        <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+          <button type="button" class="btn btn-primary" data-nav="home" data-augmented-ui="tl-clip br-clip">RETURN TO HOMEPAGE ↗</button>
+          <button type="button" class="btn btn-ghost" data-nav="contact" data-augmented-ui="tl-clip br-clip">REPORT RELAY ISSUE</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Easter Egg / Declassified Modal -->
+  <div id="easter-egg-modal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="egg-modal-title">
+    <div class="modal-card" data-augmented-ui="tl-clip br-clip border">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px">
+        <span id="egg-modal-sub" class="badge badge-red">HIDDEN ARCHIVE RECORD</span>
+        <button type="button" id="egg-modal-close" class="btn btn-ghost" style="padding:5px 10px" aria-label="Close modal" data-augmented-ui="tl-clip br-clip"><i class="fa-solid fa-xmark" aria-hidden="true"></i> CLOSE</button>
+      </div>
+      <h2 id="egg-modal-title" style="font-family:var(--display);font-size:2rem;margin:0 0 12px">DECLASSIFIED RECORD</h2>
+      <div id="egg-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- G. Shared Site Footer -->
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="#home" data-nav="home" style="margin-bottom:12px">
+          <img src="assets/anvesh-logo.jpg" class="brand-mark brand-logo-round" alt="ANVESH Directorate Emblem" width="38" height="38">
+          <span class="brand-type">
+            <strong class="cyber-glitch">ANVESH</strong>
+            <small>DIRECTORATE</small>
+          </span>
+        </a>
+        <p style="font-size:0.84rem;color:var(--text-secondary);margin:0 0 12px">ANVESH MULTIVERSE — ONE AGENCY. COUNTLESS REALITIES. UNANSWERED QUESTIONS.</p>
+        <p class="mono" style="color:var(--cyan);font-size:0.68rem;margin-bottom:14px">INVESTIGATE. VERIFY. UNDERSTAND.</p>
+        <div class="footer-social-icons" aria-label="ANVESH Directorate Social Links">
+          <a href="https://www.youtube.com/channel/UCAIOEGH046adQrZzxKQEWJA" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://x.com/AnveshDirectora" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X" title="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/anveshdirectorate/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.threads.com/@anveshdirectorate" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads" aria-hidden="true"></i></a>
+          <a href="https://discord.gg/FpYCg7GJF9" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Discord" title="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+          <a href="https://t.me/AnveshDirectorate" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram" title="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+          <a href="https://github.com/AnveshDirectorate" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/anvesh-directorate-076425451" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://m.facebook.com/61596870780144/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://gravatar.com/devotedlyfire19d7480b95" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Gravatar WordPress" title="Gravatar / WordPress"><img src="assets/gravatar-icon.svg" alt="" class="social-svg-icon" aria-hidden="true"></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>ARCHIVE ECOSYSTEM</h4>
+        <ul class="footer-links">
+          <li><button type="button" data-nav="home">Homepage Terminal</button></li>
+          <li><button type="button" data-nav="archives">Case Archives (All 6 Classes)</button></li>
+          <li><button type="button" data-open-doc="AV-164">Official Case Document Generator</button></li>
+          <li><button type="button" data-nav="agents">Agent Registry (Personnel DB)</button></li>
+          <li><button type="button" data-nav="multiverse">Multiverse Index (Realities)</button></li>
+          <li><button type="button" data-nav="evidence">Evidence Room (Forensics)</button></li>
+          <li><button type="button" data-nav="solutions">Case Solution Access</button></li>
+          <li><button type="button" data-nav="structure">Directorate Structure</button></li>
+          <li><button type="button" data-nav="transmissions">Intercepted Transmissions</button></li>
+          <li><button type="button" data-nav="about">About ANVESH</button></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>LEGAL &amp; SYSTEM VIEWS</h4>
+        <ul class="footer-links">
+          <li><button type="button" data-nav="disclaimer">Fictional Universe Disclaimer</button></li>
+          <li><button type="button" data-nav="privacy">Privacy Policy</button></li>
+          <li><button type="button" data-nav="terms">Terms of Use</button></li>
+          <li><button type="button" data-nav="contact">Contact / Creator Inquiry</button></li>
+          <li><button type="button" data-nav="404">Preview Custom 404 Page</button></li>
+          <li><button type="button" data-nav="403">Preview Custom 403 Page</button></li>
+          <li><button type="button" data-nav="500">Preview Custom 500 Page</button></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>EXTERNAL CHANNELS &amp; CLUES</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.youtube.com/channel/UCAIOEGH046adQrZzxKQEWJA" target="_blank" rel="noopener noreferrer">YouTube // ANVESH Directorate ↗</a></li>
+          <li><a href="https://youtu.be/wKXK__x7PQg" target="_blank" rel="noopener noreferrer">Watch File AV-164 Episode ↗</a></li>
+          <li><button type="button" data-prefill-code="AV-165-G-SHERU">Active Key: AV-165-G-SHERU</button></li>
+          <li><button type="button" data-prefill-code="AV-164-MV-GPT">Active Key: AV-164-MV-GPT</button></li>
+          <li><a href="mailto:anveshdirectorate@proton.me">Email: anveshdirectorate@proton.me</a></li>
+          <li><button type="button" data-nav="about" style="opacity:0.75">ABOUT ANVESH</button></li>
+        </ul>
+        <p class="mono muted" style="font-size:0.62rem;margin-top:12px">EASTER EGG CLUE: Type <strong>ALPHA</strong> on your keyboard or click <strong>09.71 MHz</strong> 3 times in the hero monitor.</p>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year">2026</span> ANVESH DIRECTORATE — MULTIVERSE ARCHIVE NODE IND-01</span>
+      <span>CLEARANCE LEVEL 03 // CLICK "SAFE EXIT" ABOVE FOR NEUTRAL VIEW &amp; PROJECT DISCLOSURE</span>
+    </div>
+
+    <div class="disclaimer-bar safe-exit-only">
+      <b>FICTIONAL ARCHIVE NOTICE:</b> This website depicts an imaginary organisation created for mystery and analog horror storytelling. It is not an official government service or source of real-world alerts.
+    </div>
+  </footer>
+  <script src="audio.js?v=10"></script>
+  <script src="script.js?v=10"></script>
+  <script src="interface-enhancements.js?v=10"></script>
+  <script src="security-guard.js?v=10"></script>
+</body>
+</html>

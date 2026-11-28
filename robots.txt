@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# ANVESH Multiverse — Fictional Mystery & Anomaly Archive
+Sitemap: https://anvesh-multiverse.netlify.app/sitemap.xml
